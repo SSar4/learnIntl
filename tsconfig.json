@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es6",                   // Versão do ECMAScript de destino
+    "module": "commonjs",                // Sistema de módulos (Node.js)
+    "strict": true,                      // Habilita verificações rigorosas
+    "esModuleInterop": true,             // Suporte a importação/exportação com CommonJS
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "outDir": "dist",                     // Diretório de saída dos arquivos transpilados
+    "baseUrl": ".",                      // Caminho base dos módulos
+    "paths": {
+      "*": ["node_modules/*", "src/types/*"]
+    },
+    "types": ["mocha", "chai", "sinon"]
+  },
+  "include": [
+    "src/**/*"                           // Diretório de origem dos arquivos TypeScript
+  ],
+  "exclude": [
+    "node_modules",                      // Excluir diretório de módulos
+    "**/*.test.ts"                       // Excluir arquivos de teste
+  ]
+}
