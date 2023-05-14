@@ -5,3 +5,5 @@ projeto para estudo de caso api da intl
 mocha, chai, (sinon*)
 
 #ts
+
+scripts de inicialização package.json
